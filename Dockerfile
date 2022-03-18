@@ -1,6 +1,7 @@
-FROM java:8
+FROM openjdk:8-jre
+MAINTAINER taogang
 
-COPY *.jar /app.jar
+COPY /target/*.jar /app.jar
 
 CMD ["--server.port=7070"]
 
